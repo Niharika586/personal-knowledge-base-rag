@@ -1,23 +1,24 @@
 # Personal Knowledge Base - RAG
 
-An AI-powered document question-answering system that allows users to ask questions about their PDF documents.
+An AI-powered document question-answering system that allows users to upload a PDF and ask questions about its content.
 
 ## Project Overview
 
-Personal Knowledge Base - RAG uses Retrieval-Augmented Generation (RAG) concepts to retrieve relevant information from a document and provide useful answers to user questions.
+Personal Knowledge Base - RAG uses Retrieval-Augmented Generation (RAG) concepts to retrieve relevant information from a user's document and provide meaningful answers.
 
-The application is built using Python and Streamlit.
+Instead of searching the entire document manually, the system extracts the document content, identifies relevant sections, and uses them to answer the user's question.
 
 ## Features
 
-- Load PDF documents
+- Upload and read PDF documents
 - Extract text from PDF files
-- Split document text into smaller chunks
-- Find relevant information using TF-IDF and cosine similarity
-- Ask questions about the document
-- Display AI-generated answers
-- Show retrieved document content
+- Process document content
+- Retrieve relevant document information
+- Ask questions about the uploaded document
+- Generate AI-based answers
+- Display retrieved document content
 - Simple and user-friendly Streamlit interface
+- Local document processing
 
 ## Technologies Used
 
@@ -27,7 +28,6 @@ The application is built using Python and Streamlit.
 - Scikit-learn
 - TF-IDF
 - Cosine Similarity
-- Natural Language Processing (NLP)
 - Retrieval-Augmented Generation (RAG)
 
 ## How It Works
@@ -37,14 +37,14 @@ PDF Document
      ↓
 Text Extraction
      ↓
-Text Chunking
+Text Processing
      ↓
-TF-IDF Vectorization
+Document Chunking
      ↓
-Cosine Similarity
+Vector Representation
      ↓
-Relevant Information Retrieval
+Similarity Search
      ↓
-Question Answering
+Relevant Document Content
      ↓
-Answer Displayed
+AI Answer
